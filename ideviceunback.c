@@ -101,6 +101,7 @@ Changes:
 \------------------------------------------------------------------*/
 int filecopy( char *source, char *dest )
 {
+	/* FIXME: use sendfile on Linux, fcopyfile on BSD/macOS */
 	static char buffer[4096];
 	FILE *s, *d;
 	size_t rsize, wsize;
