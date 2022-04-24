@@ -28,7 +28,7 @@
 #include <sys/mman.h>
 #include <sys/stat.h>
 #include <sqlite3.h>
-#include "sha1.h"
+#include <sha1.h>
 
 #define VERSION "1.03"
 #define TOOLS_BLOCK_READ_BUFFER_SIZE 4096
